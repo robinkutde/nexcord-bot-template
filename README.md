@@ -6,7 +6,8 @@ Zunächst wird der Bot erstellt und der Discord Server, auf dem der Bot agieren 
 
 Es gibt vier Slash Commands:
 
-- `moderation`: Dieser Command hat keine Funktion, er dient nur als Überkategorie für die anderen Commands.
+#- `moderation`: Dieser Command hat keine Funktion, er dient nur als Überkategorie für die anderen Commands.
 - `ban`: Dieser Command bannt einen Nutzer und sendet eine Bestätigungsnachricht an den Moderator und eine Benachrichtigungsnachricht an den gebannten Nutzer.
-- e
-- e
+- `kick`: Dieser Command kickt einen Nutzer und sendet eine Bestätigungsnachricht an den Moderator und eine Benachrichtigungsnachricht an den gekickten Nutzer.
+- `notice`: Dieser Command erstellt einen Thread in einem bestimmten Channel mit einer Notiz, die vom Moderator erstellt wurde.
+- `whisper`: Dieser Command sendet eine private Nachricht von einem Moderator an einen Nutzer.
