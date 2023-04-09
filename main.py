@@ -7,7 +7,7 @@ guild = bot.get_guild(1092022080146509884)  # Dort muss die ID deines Servers hi
 
 @bot.slash_command(description="Moderations Commands")
 async def moderation(inter: nc.Interaction):
-    pass
+    ...
 
 
 @moderation.subcommand(description="Bannt einen Member!")
@@ -81,4 +81,4 @@ async def whisper(inter: nc.Interaction, user: nc.User, message: str):
         embed=em)
 
 
-bot.run("""Dein Bot Token hier hin!""")
+bot.run("Dein Bot Token hier hin!")
