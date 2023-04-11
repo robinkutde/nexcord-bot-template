@@ -39,8 +39,6 @@ async def kick(inter: nc.Interaction, user: nc.User, reason: str):
     em.add_field(
         name="Du hast den Nutzer erfolgreich gekickt. Er hat die UserID",
         value=user.id)
-    em.add_field(name="Der User den du gekickt hast ist beigetreten",
-                 value=f'am {user.mutual_guilds}')
     em.set_thumbnail(
         url="https://cdn-icons-png.flaticon.com/512/3677/3677016.png")
     await inter.send(embed=em)
