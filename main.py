@@ -5,6 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+
+
+
 bot = commands.Bot()
 guild = bot.get_guild(int(os.environ.get("SERVER_ID")))
 
