@@ -10,8 +10,7 @@ guild = bot.get_guild(int(os.environ.get("SERVER_ID")))
 
 
 @bot.slash_command(description="Moderations Commands")
-async def moderation(inter: nc.Interaction):
-    ...
+async def moderation(inter: nc.Interaction): ...
 
 
 @moderation.subcommand(description="Bannt einen Member!")
