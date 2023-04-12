@@ -6,7 +6,7 @@ load_dotenv()
 
 
 bot = commands.Bot()
-guild = bot.get_guild(int(os.environ.get("GUILD_ID")))
+guild = bot.get_guild(int(os.environ.get("SERVER_ID")))
 
 
 @bot.slash_command(description="Moderations Commands")
@@ -83,4 +83,4 @@ async def whisper(inter: nc.Interaction, user: nc.User, message: str):
         embed=em)
 
 
-bot.run(str(os.environ.get("TOKEN")))
+bot.run(str(os.environ.get("BOT_TOKEN")))
