@@ -4,9 +4,11 @@ Dieser Python Code implementiert ein Nextcord Bot mit verschiedenen Slash Comman
 
 Zunächst wird der Bot erstellt und der Discord Server, auf dem der Bot agieren soll, wird festgelegt.
 
+Es gibt eine Slash Command Group:
+- `moderation`: Er dient als Überkategorie für die Moderations Commands
+
 Es gibt vier Slash Commands:
 
-- `moderation`: Dieser Command hat keine Funktion, er dient nur als Überkategorie für die anderen Commands.
 - `ban`: Dieser Command bannt einen Nutzer und sendet eine Bestätigungsnachricht an den Moderator und eine Benachrichtigungsnachricht an den gebannten Nutzer.
 - `kick`: Dieser Command kickt einen Nutzer und sendet eine Bestätigungsnachricht an den Moderator und eine Benachrichtigungsnachricht an den gekickten Nutzer.
 - `notice`: Dieser Command erstellt einen Thread in einem bestimmten Channel mit einer Notiz, die vom Moderator erstellt wurde.
