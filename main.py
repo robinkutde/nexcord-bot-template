@@ -1,8 +1,12 @@
+import os
 import nextcord as nc
 from nextcord.ext import commands
+from dotenv import load_dotenv
+load_dotenv()
+
 
 bot = commands.Bot()
-guild = bot.get_guild(1092022080146509884)  # Dort muss die ID deines Servers hin
+guild = bot.get_guild(int(os.environ.get("GUILD_ID")))
 
 
 @bot.slash_command(description="Moderations Commands")
@@ -79,4 +83,4 @@ async def whisper(inter: nc.Interaction, user: nc.User, message: str):
         embed=em)
 
 
-bot.run("Dein Bot Token hier hin!")
+bot.run(str(os.environ.get("TOKEN")))
