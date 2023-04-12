@@ -1,2 +1,2 @@
-nextcord==2.4.2
+nextcord
 python-dotenv==0.19.0
