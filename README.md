@@ -13,3 +13,4 @@ Es gibt vier Slash Commands:
 - `kick`: Dieser Command kickt einen Nutzer und sendet eine Bestätigungsnachricht an den Moderator und eine Benachrichtigungsnachricht an den gekickten Nutzer.
 - `notice`: Dieser Command erstellt einen Thread in einem bestimmten Channel mit einer Notiz, die vom Moderator erstellt wurde.
 - `whisper`: Dieser Command sendet eine private Nachricht von einem Moderator an einen Nutzer.
+ 
