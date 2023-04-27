@@ -11,7 +11,7 @@ load_dotenv()
 bot = commands.Bot()
 guild = bot.get_guild(int(os.environ.get("SERVER_ID")))
 
-@bot.slash_command(description="Bannt einen Member!")
+@bot.slash_command(description="Bannt einen Member!", default_member_permissions=4)
 async def ban(inter: nc.Interaction, user: nc.User, reason: str):
     em = nc.Embed(title="Erfolgreich!", color=nc.Colour.green())
     em.add_field(
@@ -34,7 +34,7 @@ async def ban(inter: nc.Interaction, user: nc.User, reason: str):
     await user.ban()
 
 
-@bot.slash_command(description="Kickt einen User")
+@bot.slash_command(description="Kickt einen User", default_member_permissions=2)
 async def kick(inter: nc.Interaction, user: nc.User, reason: str):
     em = nc.Embed(title="Erfolgreich!", color=nc.Colour.green())
     em.add_field(
@@ -57,15 +57,7 @@ async def kick(inter: nc.Interaction, user: nc.User, reason: str):
     await user.send(embed=em2)
     await user.kick()
 
-
-@bot.slash_command(description="Erstellt eine Notiz!")
-async def notice(inter: nc.Interaction, title: str, content: str):
-    notice_forum = inter.client.get_channel(
-        1093451898289401898)  # Dein Forum Channel
-    await notice_forum.create_thread(name=title, content=content)
-
-
-@bot.slash_command(description="Whisper to an User!")
+@bot.slash_command(description="Whisper to an User!", default_member_permissions=8192)
 async def whisper(inter: nc.Interaction, user: nc.User, message: str):
     em = nc.Embed(title="Ein Moderator/Supporter/Admin flüstert dir zu:",
                   description=message,
